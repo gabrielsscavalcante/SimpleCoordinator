@@ -18,6 +18,19 @@ class MainCoordinator: Coordinator {
     
     func start() {
         let vc = ViewController.instantiate(with: StoryboardID.main)
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func buySubscription() {
+        let vc = BuyViewController.instantiate(with: StoryboardID.main)
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func createAccount() {
+        let vc = CreateAccountViewController.instantiate(with: StoryboardID.main)
+        vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
 }
