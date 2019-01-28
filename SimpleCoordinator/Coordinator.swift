@@ -6,7 +6,6 @@
 //  Copyright © 2019 GabrielCavalcante. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 protocol Coordinator {
