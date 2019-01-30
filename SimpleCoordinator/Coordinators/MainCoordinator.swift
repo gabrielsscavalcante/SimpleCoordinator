@@ -19,7 +19,7 @@ class MainCoordinator: Coordinator {
     func start() {
         let vc = ViewController.instantiate(with: StoryboardID.main)
         vc.coordinator = self
-        navigationController.pushViewController(vc, animated: true)
+        navigationController.viewControllers = [vc]
     }
     
     func buySubscription() {

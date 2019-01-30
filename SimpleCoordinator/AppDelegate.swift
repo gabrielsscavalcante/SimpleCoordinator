@@ -21,8 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         coordinator = MainCoordinator(navigationController: navigationController)
         coordinator?.start()
         
+        let tabbarController = UITabBarController()
+        tabbarController.viewControllers = [navigationController]
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navigationController
+        window?.rootViewController = tabbarController
         window?.makeKeyAndVisible()
         
         return true
