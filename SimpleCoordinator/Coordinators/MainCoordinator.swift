@@ -20,6 +20,7 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         navigationController.delegate = self
         
         let vc = ViewController.instantiate(with: StoryboardID.main)
+        vc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         vc.coordinator = self
         navigationController.viewControllers = [vc]
     }
