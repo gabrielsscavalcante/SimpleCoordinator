@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6130F0102224D63300331459 /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6130F00F2224D63300331459 /* BuyCoordinator.swift */; };
 		61D3BCB921FECB3900A20529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D3BCB821FECB3900A20529 /* AppDelegate.swift */; };
 		61D3BCBB21FECB3900A20529 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D3BCBA21FECB3900A20529 /* ViewController.swift */; };
 		61D3BCBE21FECB3900A20529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D3BCBC21FECB3900A20529 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6130F00F2224D63300331459 /* BuyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
 		61D3BCB521FECB3900A20529 /* SimpleCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D3BCB821FECB3900A20529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61D3BCBA21FECB3900A20529 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				61D3BCDC21FED26900A20529 /* Protocols */,
 				61D3BCD021FECE2E00A20529 /* MainCoordinator.swift */,
+				6130F00F2224D63300331459 /* BuyCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				61D3BCBB21FECB3900A20529 /* ViewController.swift in Sources */,
 				61D3BCD721FED13800A20529 /* BuyViewController.swift in Sources */,
 				61D3BCD121FECE2E00A20529 /* MainCoordinator.swift in Sources */,
+				6130F0102224D63300331459 /* BuyCoordinator.swift in Sources */,
 				61D3BCB921FECB3900A20529 /* AppDelegate.swift in Sources */,
 				61D3BCCB21FECC0500A20529 /* Coordinator.swift in Sources */,
 				61D3BCD321FECEDD00A20529 /* StoryboardID.swift in Sources */,

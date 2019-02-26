@@ -9,7 +9,7 @@
 import UIKit
 
 class MainCoordinator: Coordinator {
-    var chieldCoordinators = [Coordinator]()
+    var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -23,14 +23,24 @@ class MainCoordinator: Coordinator {
     }
     
     func buySubscription() {
-        let vc = BuyViewController.instantiate(with: StoryboardID.main)
-        vc.coordinator = self
-        navigationController.pushViewController(vc, animated: true)
+        let child = BuyCoordinator(navigationController: navigationController)
+        child.parentCoordinator = self
+        childCoordinators.append(child)
+        child.start()
     }
     
     func createAccount() {
         let vc = CreateAccountViewController.instantiate(with: StoryboardID.main)
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func chieldDidFinish(_ child: Coordinator?) {
+        for (index, coordinator) in childCoordinators.enumerated() {
+            if coordinator === child {
+                childCoordinators.remove(at: index)
+                break
+            }
+        }
     }
 }
